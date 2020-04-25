@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Unsubscribe</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+		<div class="container-page" >
+			<form>
+			<div class="wrap-contents" style="padding-top: 0px">
+				<div style="padding-left: 60px;">
+	                  <img class="unsubscribe-img" src="images/unsubscribe.png"  alt="IMG"/>
+	                  <p class="success-msg">Do you really want to unsubscribe?</p>
+	                  <input class="wrap-input-email input-email-unsubscribe" type="text" name="email" id="email" placeholder="Email" required/>
+	                  <span class="focus-input"></span>
+	                        <span class="symbol-email-unsubscribe">
+	                            <i class="fa fa-envelope" aria-hidden="true"></i>
+	                        </span> 
+	              </div>
+	              <div class="container-login100-form-btn-unsubscribe">
+		              <button type="submit" class="login100-form-btn-unsubscribe" id="final-unsubscribe">Unsubscribe</button>
+	                  <button type="button" class="login100-form-btn-unsubscribe" id="cancel">Cancel</button> 
+	               </div>
+              </div>
+              </form>
+    				
+    		</div>
+    		<div id="unsubscribe-window" class="successfailure-popup">
+  			<div class="modal-content">
+    			<span class="close">&times;</span>
+    				<div>
+						<img class="successfailure-img" src="images/success.png"  alt="IMG"/>
+					</div>
+    				<span class="success-msg">You have successfully unsubscribed.</span>
+    				<div class="container-login100-form-btn-unsubscribe">
+    					<button type="button" class="login100-form-btn-unsubscribe" id="cancel" onclick="window.open('index.html','_blank');" target="_blank">Re-subscribe</button>
+    				</div>
+  			</div>
+		</div>			
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
+	<!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> uncommented these 2 to avoid the error of unsourced map network with file popper.js -->
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1kND3WkB9Gnq9I_5Js7x0oEtkZFUJxBM&libraries=places" type="text/javascript"></script>
+<!--===============================================================================================-->
+	<!-- <script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script> -->
+<!--===============================================================================================-->
+	<script src="js/unsubscribe.js"></script>
+
+</body>
+</html>

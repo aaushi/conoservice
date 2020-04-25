@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-page">
+			<div class="wrap-contents">
+				<div class="pic">
+					<img src="images/coronavirus.png" class="rot" alt="IMG">
+				</div>
+				<form class="details-form validate-form">
+					<span class="details-form-title">
+						Subscribe to get the Latest Updates on Coronavirus affected cities in India
+					</span>					
+					<div class="wrap-input validate-input" >
+    					<input class="input-name" type="text" id="name" placeholder="Name" onfocusout="NameValidate()" required/>
+    
+
+						<span class="symbol-name">
+							<i class="fa fa-user"></i>
+						</span>
+					
+						<input class="input-city" type="text" id="city" placeholder="City" required/>
+						<span class="symbol-city">
+							<i class="fa fa-map-marker"></i>
+						</span>
+						
+					</div>
+
+
+					<div class="wrap-input validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input-email" type="text" id="email" placeholder="Email" onfocusout="EmailValidate()" required/>
+						<span class="focus-input"></span>
+						<span class="symbol-email">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					
+					<div class="container-form-btn">
+						<button class="form-btn" id="subscribe" type="submit">
+							Subscribe
+						</button>
+					</div>
+					<div class="container-form-btn">
+						<button class="form-btn" id="unsubscribe" onclick="window.open('unsubscribe.html','_blank');" target="_blank" type="button">
+							Unsubscribe
+						</button>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+		<!-- Modal content -->
+		<div id="subscribe-success" class="successfailure-popup">
+  			<div class="modal-content">
+    			<span class="close">&times;</span>
+    				<div>
+						<img class="successfailure-img" src="images/success.png"  alt="IMG"/>
+					</div>
+    				<span class="success-msg">Thank you for subscribing.</span>
+  			</div>
+		</div>
+		
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1kND3WkB9Gnq9I_5Js7x0oEtkZFUJxBM&libraries=places" type="text/javascript"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
